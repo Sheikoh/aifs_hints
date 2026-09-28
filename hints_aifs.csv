@@ -1,0 +1,15 @@
+,module,exercise,task,hint
+0,Machine Learning,California Housing Market,1,"Import numpy, pandas, train_test_split, imputers/encoders, ColumnTransformer, LinearRegression, r2_score, and optional plotly for plots."
+1,Machine Learning,California Housing Market,2,Call sklearn.datasets.fetch_california_housing() and read data.DESCR to inspect the dataset.
+2,Machine Learning,California Housing Market,3,Print data['target'] and list data['feature_names'] from the Bunch object.
+3,Machine Learning,California Housing Market,4,"Build a DataFrame from data.data, data.feature_names, and data.target (name the target column Price or MedHouseVal)."
+4,Machine Learning,California Housing Market,5,Use plotly.express scatter plots or a pair plot to compare each feature to the target.
+5,Machine Learning,California Housing Market,6,Drop or cap extreme rows (for example high AveRooms or Population) before modeling.
+6,Machine Learning,California Housing Market,7,Plot a correlation heatmap on numeric columns to see which features track the target.
+7,Machine Learning,California Housing Market,8,Keep only MedInc as X and your target column as Y.
+8,Machine Learning,California Housing Market,9,Use train_test_split with test_size=0.2 and a fixed random_state.
+9,Machine Learning,California Housing Market,10,Scale numeric features if needed (StandardScaler inside a ColumnTransformer).
+10,Machine Learning,California Housing Market,11,"Fit LinearRegression on X_train, Y_train, then print r2_score on train and test."
+11,Machine Learning,California Housing Market,12,Scatter Y_test vs regressor.predict(X_test) to check fit quality.
+12,Machine Learning,California Housing Market,13,"Add all feature columns to X, refit, and compare test R^2 to the baseline."
+13,Machine Learning,California Housing Market,14,Inspect model.coef_ alongside feature names to rank drivers of price.
