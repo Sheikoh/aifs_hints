@@ -148,3 +148,173 @@ print(X.head())"
                     # TODO: set margin ...
                     # TODO: )
     # TODO: fig.show()"
+14,Machine Learning,Feature engineering and feature selection,1,"# TODO: Complete this step following the instructions above.
+    # Basic stats
+    print(""Number of rows : {}"".format(dataset.shape[0]))
+    print()
+
+    print(""Display of dataset: "")
+    display(dataset.head())
+    print()
+
+    print(""Basics statistics: "")
+    # TODO: set data_desc ...
+    display(data_desc)
+    print()
+
+    print(""Percentage of missing values: "")
+    display(100*dataset.isnull().sum()/dataset.shape[0])"
+15,Machine Learning,Feature engineering and feature selection,2,"# TODO: Complete this step following the instructions above.
+    # Separate target variable Y from features X
+    print(""Separating labels from features..."")
+    # TODO: set target_variable ...
+
+    # TODO: set X ...
+    # TODO: set Y ...
+
+    print(""...Done."")
+    print()
+
+    print('Y : ')
+    print(Y.head())
+    print()
+    print('X :')
+    # TODO: X.head()"
+16,Machine Learning,Feature engineering and feature selection,3,"# TODO: Complete this step following the instructions above.
+    # TODO: set features_list ...
+    # TODO: for c in features_list:
+        # TODO: set X.loc[:, c + '_2'] ...
+        # TODO: set X.loc[:, c + '_3'] ...
+        # TODO: set X.loc[:, c + '_4'] ...
+        # TODO: set X.loc[:, c + '_inverse'] ...
+        # TODO: set X.loc[:, c + '_inverse2'] ...
+    # TODO: X.head()"
+17,Machine Learning,Feature engineering and feature selection,51,"# TODO: Complete this step following the instructions above.
+    # Preprocessing
+    print(""Preprocessing X_train..."")
+    print(X_train.head())
+    print()
+    # TODO: set scaler ...
+    # TODO: set X_train ...
+    print(""...Done!"")
+    print(X_train[0:5,:]) # X_train is now a numpy array"
+18,Machine Learning,Feature engineering and feature selection,52,"# TODO: Complete this step following the instructions above.
+    print(""Preprocessing X_test..."")
+    print(X_test.head())
+    print()
+    # TODO: set X_test ...
+    print(""...Done!"")
+    print(X_test[0:5,:]) # X_train is now a numpy array
+
+    "
+19,Machine Learning,Feature engineering and feature selection,7,"# TODO: Complete this step following the instructions above.
+    # TODO: set feature_selector ...
+    # TODO: feature_selector.fit(X_train, Y_train)
+    # TODO: set features_list ...
+    # TODO: set best_features ...
+    print(""According to the forward selection algorithm, the following features should be kept: "")
+    print(best_features.to_list())
+
+    "
+20,Machine Learning,Feature engineering and feature selection,8,"# TODO: Complete this step following the instructions above.
+    # TODO: set X_best ...
+
+    # Divide dataset Train set & Test set
+    print(""Dividing into train and test sets..."")
+    # TODO: set X_train, X_test, Y_train, Y_test ...
+    print(""...Done."")
+    print()
+
+    # Preprocessing
+    print(""Preprocessing X_train..."")
+    print(X_train.head())
+    print()
+    # TODO: set scaler ...
+    # TODO: set X_train ...
+    print(""...Done!"")
+    print(X_train[0:5,:]) # X_train is now a numpy array
+
+    print(""Preprocessing X_test..."")
+    print(X_test.head())
+    print()
+    # TODO: set X_test ...
+    print(""...Done!"")
+    print(X_test[0:5,:]) # X_train is now a numpy array
+
+    # Train model
+    print(""Train model..."")
+    # TODO: set regressor ...
+    # TODO: fit the model on the training data.
+    print(""...Done."")
+
+    # Print R^2 scores
+    print(""R2 score on training set : "", regressor.score(X_train, Y_train))
+    print(""R2 score on test set : "", regressor.score(X_test, Y_test))
+
+    "
+21,Machine Learning,Feature engineering and feature selection,111,"# TODO: Complete this step following the instructions above.
+    # Example of how to get the adress from a given pair of latitude/longitude coordinates
+
+    # TODO: set geolocator ...
+    # TODO: set location ...
+    # TODO: set loc_dict ...
+    # TODO: loc_dict[""address""]
+
+    "
+22,Machine Learning,Feature engineering and feature selection,112,"# TODO: Complete this step following the instructions above.
+    # Use geopy to extract the city of each row in the sample dataset
+    # TODO: set X_sample[""City""] ...
+    # TODO: for i, row in X_sample.iterrows():
+        # TODO: set geolocator ...
+        # TODO: set location ...
+                                    # TODO: set timeout ...
+        # TODO: set loc_dict ...
+        # TODO: try:
+            # TODO: set X_sample.loc[i, ""City""] ...
+        # TODO: except:
+            # TODO: try:
+                # TODO: set X_sample.loc[i, ""City""] ...
+            # TODO: except:
+                # TODO: try:
+                    # TODO: set X_sample.loc[i, ""City""] ...
+                # TODO: except:
+                    # TODO: pass
+    # If city was not found, replace by ""Unknown""
+    # TODO: set X_sample.loc[X_sample['City'] ...
+
+    "
+23,Machine Learning,Feature engineering and feature selection,131,"# TODO: Complete this step following the instructions above.
+    # Use ColumnTransformer to make a preprocessor object that describes all the treatments to be done
+    # TODO: set preprocessor ...
+        # TODO: set transformers ...
+            # TODO: ('num', numeric_transformer, numeric_features),
+            # TODO: ('cat', categorical_transformer, categorical_features)
+        # TODO: ])
+
+    "
+24,Machine Learning,Feature engineering and feature selection,132,"# TODO: Complete this step following the instructions above.
+    # Preprocessings on train set
+    print(""Performing preprocessings on train set..."")
+    # TODO: set X_train ...
+    print('...Done.')
+
+    # Preprocessings on test set
+    print(""Performing preprocessings on test set..."")
+    # TODO: set X_test ...
+    # you fit on the training set, so you can only apply transformations that were fit on the training set. the training set, therefore we can only apply transformations that were parametered using the training set.
+    # Otherwise this creates what is called a leak from the test set which will introduce a bias in all your results.
+    print('...Done.')
+
+    "
+25,Machine Learning,Feature engineering and feature selection,14,"# TODO: Complete this step following the instructions above.
+    # Train model
+    print(""Train model..."")
+    # TODO: set regressor ...
+    # TODO: fit the model on the training data.
+    print(""...Done."")
+
+    # Print R^2 scores
+    print(""R2 score on training set : "", regressor.score(X_train, Y_train))
+    print(""R2 score on test set : "", regressor.score(X_test, Y_test))
+
+    "

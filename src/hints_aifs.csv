@@ -13,3 +13,17 @@
 11,Machine Learning,Californian Housing Market,12,Scatter Y_test vs regressor.predict(X_test) to check fit quality.
 12,Machine Learning,Californian Housing Market,13,"Add all feature columns to X, refit, and compare test R^2 to the baseline."
 13,Machine Learning,Californian Housing Market,14,Inspect model.coef_ alongside feature names to rank drivers of price.
+14,Machine Learning,Feature engineering and feature selection,1,"Reuse the outlier rule from the previous exercise (for example, drop extreme quantiles on key columns) so train and test sets stay comparable."
+15,Machine Learning,Feature engineering and feature selection,2,Split features and target before engineering new columns.
+16,Machine Learning,Feature engineering and feature selection,3,Engineer nonlinear columns before fitting the richer linear model.
+17,Machine Learning,Feature engineering and feature selection,4,Use train_test_split with test_size=0.2 and the same random_state as before.
+18,Machine Learning,Feature engineering and feature selection,5,Reuse the ColumnTransformer pattern from the first housing exercise.
+19,Machine Learning,Feature engineering and feature selection,6,Fit on the expanded feature set and compare test R^2 to the multivariate model from exercise 01.
+20,Machine Learning,Feature engineering and feature selection,7,Forward selection reduces features while monitoring validation score.
+21,Machine Learning,Feature engineering and feature selection,8,"Subset X to selected columns, then train and score a final model."
+22,Machine Learning,Feature engineering and feature selection,9,"Geographic features from coordinates can help, but API calls are slow on full data."
+23,Machine Learning,Feature engineering and feature selection,10,Sample about 150 rows from X and align Y with the same index.
+24,Machine Learning,Feature engineering and feature selection,11,Use geopy.geocoders.Nominatim to map latitude/longitude to city names (allow time for API calls).
+25,Machine Learning,Feature engineering and feature selection,12,Split X_sample and Y_sample with an 80/20 train/test split.
+26,Machine Learning,Feature engineering and feature selection,13,Encode city names with OneHotEncoder and scale numeric columns in a pipeline.
+27,Machine Learning,Feature engineering and feature selection,14,Fit and report train/test R^2; check for overfitting if train score is much higher.
