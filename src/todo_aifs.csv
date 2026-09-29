@@ -1,12 +1,12 @@
 ,module,exercise,task,todo
-0,Machine Learning,California Housing Market,5,"# TODO: Complete this step following the instructions above.
+0,Machine Learning,Californian Housing Market,5,"# TODO: Complete this step following the instructions above.
     # Visualize pairwise dependencies
     # TODO: set fig ...
     # TODO: fig.update_layout(
             # TODO: set title ...
                 # TODO: set autosize ...
     # TODO: fig.show()"
-1,Machine Learning,California Housing Market,6,"# TODO: Complete this step following the instructions above.
+1,Machine Learning,Californian Housing Market,6,"# TODO: Complete this step following the instructions above.
     # TODO: set mask ...
         # TODO: (dataset['AveOccup'] < 10) & (dataset['Price'] < 5)
 
@@ -17,7 +17,7 @@
             # TODO: set title ...
                 # TODO: set autosize ...
     # TODO: fig.show()"
-2,Machine Learning,California Housing Market,7,"# TODO: Complete this step following the instructions above.
+2,Machine Learning,Californian Housing Market,7,"# TODO: Complete this step following the instructions above.
     # Correlation matrix
     # TODO: set corr_matrix ...
 
@@ -29,7 +29,7 @@
 
     # TODO: fig.show()
     "
-3,Machine Learning,California Housing Market,8,"# TODO: Complete this step following the instructions above.
+3,Machine Learning,Californian Housing Market,8,"# TODO: Complete this step following the instructions above.
 # Separate target variable Y from features X
 print(""Separating labels from features..."")
 # TODO: set features_list ...
@@ -46,7 +46,7 @@ print(Y.head())
 print()
 print('X :')
 print(X.head())"
-4,Machine Learning,California Housing Market,101,"# TODO: Complete this step following the instructions above.
+4,Machine Learning,Californian Housing Market,101,"# TODO: Complete this step following the instructions above.
     # Basic stats
     print(""Number of rows : {}"".format(dataset.shape[0]))
     print()
@@ -63,7 +63,7 @@ print(X.head())"
     print(""Percentage of missing values: "")
     display(100*dataset.isnull().sum()/dataset.shape[0])
     "
-5,Machine Learning,California Housing Market,102,"# TODO: Complete this step following the instructions above.
+5,Machine Learning,Californian Housing Market,102,"# TODO: Complete this step following the instructions above.
     print(""Preprocessing X_train..."")
     print(X_train.head())
     print()
@@ -72,21 +72,21 @@ print(X.head())"
     print(""...Done!"")
     print(X_train[0:5,:]) # X_train is now a numpy array
     "
-6,Machine Learning,California Housing Market,103,"# TODO: Complete this step following the instructions above.
+6,Machine Learning,Californian Housing Market,103,"# TODO: Complete this step following the instructions above.
     print(""Preprocessing X_test..."")
     print(X_test.head())
     print()
     # TODO: set X_test ...
     print(""...Done!"")
     print(X_test[0:5,:]) # X_train is now a numpy array"
-7,Machine Learning,California Housing Market,121,"# TODO: Complete this step following the instructions above.
+7,Machine Learning,Californian Housing Market,121,"# TODO: Complete this step following the instructions above.
     # Predictions on training set
     print(""Predictions on training set..."")
     # TODO: set Y_train_pred ...
     print(""...Done."")
     print(Y_train_pred)
     print()"
-8,Machine Learning,California Housing Market,122,"# TODO: Complete this step following the instructions above.
+8,Machine Learning,Californian Housing Market,122,"# TODO: Complete this step following the instructions above.
     # Visualize the model
     # Visualize predictions on training Set
     # TODO: set fig ...
@@ -97,7 +97,7 @@ print(X.head())"
     # TODO: set fig ...
     # TODO: set fig.add_trace(go.Scatter(x ...
     # TODO: fig.show()"
-9,Machine Learning,California Housing Market,123,"# TODO: Complete this step following the instructions above.
+9,Machine Learning,Californian Housing Market,123,"# TODO: Complete this step following the instructions above.
     # Separate target variable Y from features X
     print(""Separating labels from features..."")
     # TODO: set target_variable ...
@@ -113,7 +113,7 @@ print(X.head())"
     print()
     print('X :')
     # TODO: X.head()"
-10,Machine Learning,California Housing Market,131,"# TODO: Complete this step following the instructions above.
+10,Machine Learning,Californian Housing Market,131,"# TODO: Complete this step following the instructions above.
     # Preprocessing
     print(""Preprocessing X_train..."")
     print(X_train.head())
@@ -123,7 +123,7 @@ print(X.head())"
     print(""...Done!"")
     print(X_train[0:5,:]) # X_train is now a numpy array
     "
-11,Machine Learning,California Housing Market,132,"# TODO: Complete this step following the instructions above.
+11,Machine Learning,Californian Housing Market,132,"# TODO: Complete this step following the instructions above.
     print(""Preprocessing X_test..."")
     print(X_test.head())
     print()
@@ -131,7 +131,7 @@ print(X.head())"
     print(""...Done!"")
     print(X_test[0:5,:]) # X_train is now a numpy array
     "
-12,Machine Learning,California Housing Market,141,"# TODO: Complete this step following the instructions above.
+12,Machine Learning,Californian Housing Market,141,"# TODO: Complete this step following the instructions above.
     # As we didn't implement a complex preprocessing pipeline, the column names is just the initial list of features !
     # TODO: set column_names ...
 
@@ -139,7 +139,7 @@ print(X.head())"
     # TODO: set coefs ...
     # TODO: coefs
     "
-13,Machine Learning,California Housing Market,142,"# TODO: Complete this step following the instructions above.
+13,Machine Learning,Californian Housing Market,142,"# TODO: Complete this step following the instructions above.
     # Compute abs() and sort values
     # TODO: set feature_importance ...
     # Plot coefficients
